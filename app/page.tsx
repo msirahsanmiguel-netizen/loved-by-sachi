@@ -1,27 +1,5 @@
 export default function LovedBySachi() {
-  const products = [
-    {
-      name: 'Coach Shoulder Bag',
-      price: '₱2,500',
-      condition: 'Excellent Condition',
-      image:
-        'https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1200&auto=format&fit=crop',
-    },
-    {
-      name: 'Neutral Knit Cardigan',
-      price: '₱650',
-      condition: 'Like New',
-      image:
-        'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop',
-    },
-    {
-      name: 'Minimal Leather Tote',
-      price: '₱1,800',
-      condition: 'Good Condition',
-      image:
-        'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=1200&auto=format&fit=crop',
-    },
-  ];
+const products = [];
 
   return (
     <div className="min-h-screen bg-[#F7F3EE] text-[#1E1E1E]">
@@ -77,42 +55,15 @@ export default function LovedBySachi() {
         </div>
       </section>
 
-      <section id="shop" className="px-6 md:px-16 py-16">
-        <div className="flex items-center justify-between mb-10">
-          <h3 className="text-3xl font-serif">Featured Items</h3>
-          <p className="text-sm text-[#7C7267]">Updated weekly</p>
-        </div>
+      <section id="shop" className="px-6 md:px-16 py-24 text-center">
+  <h3 className="text-4xl font-serif mb-6">
+    Coming Soon
+  </h3>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {products.map((product, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition"
-            >
-              <img
-                src={product.image}
-                alt={product.name}
-                className="h-80 w-full object-cover"
-              />
-
-              <div className="p-6">
-                <div className="flex items-start justify-between mb-2 gap-4">
-                  <h4 className="font-medium text-lg">{product.name}</h4>
-                  <span className="font-semibold">{product.price}</span>
-                </div>
-
-                <p className="text-sm text-[#6D645B] mb-5">
-                  {product.condition}
-                </p>
-
-                <button className="w-full bg-[#1E1E1E] text-white py-3 rounded-full hover:opacity-90 transition">
-                  Reserve Item
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+  <p className="text-lg text-[#5E554B] max-w-2xl mx-auto">
+    Carefully curated authentic preloved pieces will be added soon.
+  </p>
+</section>
 
       <section
         id="about"
@@ -151,7 +102,13 @@ export default function LovedBySachi() {
         </p>
 
         <div className="space-y-2 text-lg">
-          <p>@lovedbysachi_</p>
+          <a
+  href="https://instagram.com/lovedbysachi_"
+  target="_blank"
+  className="underline">
+>
+  @lovedbysachi_
+</a>
           <p>lovedbysachi@gmail.com</p>
         </div>
       </section>
