@@ -105,7 +105,7 @@ const products = [];
           <a
   href="https://instagram.com/lovedbysachi_"
   target="_blank"
-  className="underline">
+  className="underline"
 >
   @lovedbysachi_
 </a>
